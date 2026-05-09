@@ -29,14 +29,18 @@ Alerts we send:
 from __future__ import annotations
 
 from dataclasses import dataclass
-
-try:
-    import httpx
-except ImportError:  # pragma: no cover - dev guard
-    httpx = None  # type: ignore[assignment]
+from typing import Any
 
 from src.utils.logging import logger
 from src.utils.settings import settings
+
+httpx: Any
+try:
+    import httpx as _httpx
+
+    httpx = _httpx
+except ImportError:  # pragma: no cover - dev guard
+    httpx = None
 
 
 @dataclass
