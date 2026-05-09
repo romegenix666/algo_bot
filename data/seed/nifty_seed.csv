@@ -1,0 +1,225 @@
+symbol,name,sector
+^NSEI,NIFTY 50,Index
+^NSEBANK,NIFTY BANK,Index
+RELIANCE.NS,Reliance Industries Ltd,Energy
+TCS.NS,Tata Consultancy Services Ltd,IT
+INFY.NS,Infosys Ltd,IT
+HDFCBANK.NS,HDFC Bank Ltd,Financials
+ICICIBANK.NS,ICICI Bank Ltd,Financials
+SBIN.NS,State Bank of India,Financials
+AXISBANK.NS,Axis Bank Ltd,Financials
+KOTAKBANK.NS,Kotak Mahindra Bank Ltd,Financials
+LT.NS,Larsen & Toubro Ltd,Industrials
+ITC.NS,ITC Ltd,Consumer Staples
+HINDUNILVR.NS,Hindustan Unilever Ltd,Consumer Staples
+BHARTIARTL.NS,Bharti Airtel Ltd,Communication Services
+ASIANPAINT.NS,Asian Paints Ltd,Consumer Discretionary
+MARUTI.NS,Maruti Suzuki India Ltd,Consumer Discretionary
+M&M.NS,Mahindra & Mahindra Ltd,Consumer Discretionary
+TITAN.NS,Titan Company Ltd,Consumer Discretionary
+SUNPHARMA.NS,Sun Pharmaceutical Industries Ltd,Health Care
+DRREDDY.NS,Dr. Reddy's Laboratories Ltd,Health Care
+CIPLA.NS,Cipla Ltd,Health Care
+DIVISLAB.NS,Divi's Laboratories Ltd,Health Care
+WIPRO.NS,Wipro Ltd,IT
+HCLTECH.NS,HCL Technologies Ltd,IT
+TECHM.NS,Tech Mahindra Ltd,IT
+ONGC.NS,Oil & Natural Gas Corporation Ltd,Energy
+NTPC.NS,NTPC Ltd,Utilities
+POWERGRID.NS,Power Grid Corporation of India Ltd,Utilities
+TATASTEEL.NS,Tata Steel Ltd,Materials
+JSWSTEEL.NS,JSW Steel Ltd,Materials
+HINDALCO.NS,Hindalco Industries Ltd,Materials
+ULTRACEMCO.NS,UltraTech Cement Ltd,Materials
+GRASIM.NS,Grasim Industries Ltd,Materials
+ADANIPORTS.NS,Adani Ports and Special Economic Zone Ltd,Industrials
+APOLLOHOSP.NS,Apollo Hospitals Enterprise Ltd,Health Care
+BAJFINANCE.NS,Bajaj Finance Ltd,Financials
+BAJAJFINSV.NS,Bajaj Finserv Ltd,Financials
+BAJAJ-AUTO.NS,Bajaj Auto Ltd,Consumer Discretionary
+BRITANNIA.NS,Britannia Industries Ltd,Consumer Staples
+BPCL.NS,Bharat Petroleum Corporation Ltd,Energy
+COALINDIA.NS,Coal India Ltd,Energy
+EICHERMOT.NS,Eicher Motors Ltd,Consumer Discretionary
+HEROMOTOCO.NS,Hero MotoCorp Ltd,Consumer Discretionary
+HDFCLIFE.NS,HDFC Life Insurance Company Ltd,Financials
+SBILIFE.NS,SBI Life Insurance Company Ltd,Financials
+INDUSINDBK.NS,IndusInd Bank Ltd,Financials
+IOC.NS,Indian Oil Corporation Ltd,Energy
+NESTLEIND.NS,Nestle India Ltd,Consumer Staples
+SHREECEM.NS,Shree Cement Ltd,Materials
+TATAMOTORS.NS,Tata Motors Ltd,Consumer Discretionary
+TATACONSUM.NS,Tata Consumer Products Ltd,Consumer Staples
+UPL.NS,UPL Ltd,Materials
+ADANIENT.NS,Adani Enterprises Ltd,Industrials
+ADANIGREEN.NS,Adani Green Energy Ltd,Utilities
+ADANIPOWER.NS,Adani Power Ltd,Utilities
+AMBUJACEM.NS,Ambuja Cements Ltd,Materials
+AUROPHARMA.NS,Aurobindo Pharma Ltd,Health Care
+DMART.NS,Avenue Supermarts Ltd,Consumer Staples
+GAIL.NS,GAIL (India) Ltd,Utilities
+HAVELLS.NS,Havells India Ltd,Industrials
+PIDILITIND.NS,Pidilite Industries Ltd,Materials
+SIEMENS.NS,Siemens Ltd,Industrials
+symbol,name,sector
+RELIANCE,Reliance Industries,Energy
+TCS,Tata Consultancy Services,IT
+HDFCBANK,HDFC Bank,Financials
+ICICIBANK,ICICI Bank,Financials
+HINDUNILVR,Hindustan Unilever,FMCG
+INFY,Infosys,IT
+SBIN,State Bank of India,Financials
+BHARTIARTL,Bharti Airtel,Telecom
+ITC,ITC,FMCG
+KOTAKBANK,Kotak Mahindra Bank,Financials
+LT,Larsen & Toubro,Construction
+HCLTECH,HCL Technologies,IT
+AXISBANK,Axis Bank,Financials
+MARUTI,Maruti Suzuki India,Auto
+ASIANPAINT,Asian Paints,Consumer Durables
+TITAN,Titan Company,Consumer Durables
+BAJFINANCE,Bajaj Finance,Financials
+SUNPHARMA,Sun Pharmaceutical,Healthcare
+WIPRO,Wipro,IT
+ULTRACEMCO,UltraTech Cement,Materials
+NESTLEIND,Nestle India,FMCG
+ADANIENT,Adani Enterprises,Conglomerate
+BAJAJFINSV,Bajaj Finserv,Financials
+NTPC,NTPC,Power
+ONGC,Oil and Natural Gas Corporation,Energy
+POWERGRID,Power Grid Corporation,Power
+TATAMOTORS,Tata Motors,Auto
+JSWSTEEL,JSW Steel,Materials
+M&M,Mahindra & Mahindra,Auto
+TATASTEEL,Tata Steel,Materials
+COALINDIA,Coal India,Energy
+TECHM,Tech Mahindra,IT
+HDFCLIFE,HDFC Life Insurance,Financials
+SBILIFE,SBI Life Insurance,Financials
+INDUSINDBK,IndusInd Bank,Financials
+DRREDDY,Dr Reddy's Laboratories,Healthcare
+DIVISLAB,Divi's Laboratories,Healthcare
+CIPLA,Cipla,Healthcare
+HEROMOTOCO,Hero MotoCorp,Auto
+EICHERMOT,Eicher Motors,Auto
+BAJAJ-AUTO,Bajaj Auto,Auto
+GRASIM,Grasim Industries,Materials
+BRITANNIA,Britannia Industries,FMCG
+ADANIPORTS,Adani Ports and SEZ,Industrials
+HINDALCO,Hindalco Industries,Materials
+TATACONSUM,Tata Consumer Products,FMCG
+APOLLOHOSP,Apollo Hospitals,Healthcare
+LTIM,LTIMindtree,IT
+BPCL,Bharat Petroleum,Energy
+SHRIRAMFIN,Shriram Finance,Financials
+DMART,Avenue Supermarts,Consumer Discretionary
+ADANIGREEN,Adani Green Energy,Power
+ADANITRANS,Adani Energy Solutions,Power
+DLF,DLF,Realty
+GODREJCP,Godrej Consumer Products,FMCG
+HAVELLS,Havells India,Consumer Durables
+ICICIPRULI,ICICI Prudential Life,Financials
+IOC,Indian Oil Corporation,Energy
+MARICO,Marico,FMCG
+PIDILITIND,Pidilite Industries,Chemicals
+SIEMENS,Siemens,Industrials
+SRF,SRF,Chemicals
+TATAPOWER,Tata Power,Power
+TRENT,Trent,Consumer Discretionary
+VEDL,Vedanta,Materials
+ZOMATO,Zomato,Consumer Discretionary
+NAUKRI,Info Edge (India),Consumer Discretionary
+PAYTM,One 97 Communications,Financials
+NYKAA,FSN E-Commerce Ventures,Consumer Discretionary
+PERSISTENT,Persistent Systems,IT
+COFORGE,Coforge,IT
+MPHASIS,Mphasis,IT
+LTTS,L&T Technology Services,IT
+PGHH,Procter & Gamble Hygiene,FMCG
+COLPAL,Colgate-Palmolive (India),FMCG
+DABUR,Dabur India,FMCG
+BERGEPAINT,Berger Paints (I),Consumer Durables
+PIIND,PI Industries,Chemicals
+UPL,UPL,Chemicals
+DEEPAKNTR,Deepak Nitrite,Chemicals
+ABB,ABB India,Industrials
+BHEL,Bharat Heavy Electricals,Industrials
+BEL,Bharat Electronics,Industrials
+HAL,Hindustan Aeronautics,Industrials
+CUMMINSIND,Cummins India,Industrials
+ASHOKLEY,Ashok Leyland,Auto
+TVSMOTOR,TVS Motor Company,Auto
+BOSCHLTD,Bosch,Auto
+MOTHERSON,Samvardhana Motherson Intl,Auto
+BALKRISIND,Balkrishna Industries,Auto
+AUROPHARMA,Aurobindo Pharma,Healthcare
+LUPIN,Lupin,Healthcare
+BIOCON,Biocon,Healthcare
+TORNTPHARM,Torrent Pharmaceuticals,Healthcare
+GLENMARK,Glenmark Pharmaceuticals,Healthcare
+ALKEM,Alkem Laboratories,Healthcare
+ZYDUSLIFE,Zydus Lifesciences,Healthcare
+ABBOTINDIA,Abbott India,Healthcare
+PEL,Piramal Enterprises,Financials
+MUTHOOTFIN,Muthoot Finance,Financials
+CHOLAFIN,Cholamandalam Investment,Financials
+LICHSGFIN,LIC Housing Finance,Financials
+RECLTD,REC,Financials
+PFC,Power Finance Corporation,Financials
+BANKBARODA,Bank of Baroda,Financials
+PNB,Punjab National Bank,Financials
+CANBK,Canara Bank,Financials
+UNIONBANK,Union Bank of India,Financials
+IDFCFIRSTB,IDFC First Bank,Financials
+AUBANK,AU Small Finance Bank,Financials
+FEDERALBNK,The Federal Bank,Financials
+BANDHANBNK,Bandhan Bank,Financials
+RBLBANK,RBL Bank,Financials
+GAIL,GAIL (India),Energy
+HINDPETRO,Hindustan Petroleum,Energy
+PETRONET,Petronet LNG,Energy
+IGL,Indraprastha Gas,Energy
+GUJGASLTD,Gujarat Gas,Energy
+MGL,Mahanagar Gas,Energy
+NHPC,NHPC,Power
+SJVN,SJVN,Power
+TORNTPOWER,Torrent Power,Power
+JSWENERGY,JSW Energy,Power
+ACC,ACC,Materials
+AMBUJACEM,Ambuja Cements,Materials
+SHREECEM,Shree Cement,Materials
+DALBHARAT,Dalmia Bharat,Materials
+RAMCOCEM,The Ramco Cements,Materials
+SAIL,Steel Authority of India,Materials
+NMDC,NMDC,Materials
+NATIONALUM,National Aluminium Co,Materials
+JINDALSTEL,Jindal Steel & Power,Materials
+APLAPOLLO,APL Apollo Tubes,Materials
+ASTRAL,Astral,Materials
+POLYCAB,Polycab India,Industrials
+KEI,KEI Industries,Industrials
+CROMPTON,Crompton Greaves,Consumer Durables
+VOLTAS,Voltas,Consumer Durables
+WHIRLPOOL,Whirlpool of India,Consumer Durables
+DIXON,Dixon Technologies,Consumer Durables
+KAJARIACER,Kajaria Ceramics,Consumer Durables
+PAGEIND,Page Industries,Consumer Discretionary
+JUBLFOOD,Jubilant FoodWorks,Consumer Discretionary
+ABFRL,Aditya Birla Fashion,Consumer Discretionary
+SHOPERSTOP,Shoppers Stop,Consumer Discretionary
+INDIGO,InterGlobe Aviation,Industrials
+CONCOR,Container Corporation of India,Industrials
+GMRINFRA,GMR Airports Infra,Industrials
+IRCTC,Indian Railway Catering,Consumer Discretionary
+IDEA,Vodafone Idea,Telecom
+GODREJPROP,Godrej Properties,Realty
+OBEROIRLTY,Oberoi Realty,Realty
+PRESTIGE,Prestige Estates Projects,Realty
+PHOENIXLTD,The Phoenix Mills,Realty
+LODHA,Macrotech Developers,Realty
+^NSEI,Nifty 50,Index
+^NSEBANK,Nifty Bank,Index
+^CNXIT,Nifty IT,Index
+^CNXFMCG,Nifty FMCG,Index
+^CNXAUTO,Nifty Auto,Index
+^CNXPHARMA,Nifty Pharma,Index

@@ -59,6 +59,7 @@ htmlcov/
 /data/
 !/data/seed/
 !/data/seed/**
+!/data/seed/nifty_seed.csv
 /logs/
 *.sqlite
 *.db
