@@ -1,0 +1,81 @@
+[project]
+name = "algo-bot"
+version = "0.1.0"
+description = "Personal algorithmic trading bot for Indian equities (NSE/BSE)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["data", "logs", "notebooks", ".venv"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "SIM", # flake8-simplify
+    "C90", # mccabe complexity
+    "N",   # pep8 naming
+    "RUF", # ruff-specific
+]
+ignore = [
+    "E501",   # line too long — handled by formatter
+    "B008",   # function-call-in-default-arg (common with pydantic Field)
+    "RUF001", # ambiguous unicode in strings — finance/math uses σ, ×, – legitimately
+    "RUF002", # ambiguous unicode in docstrings — same reason
+    "RUF003", # ambiguous unicode in comments — same reason
+    "E741",   # ambiguous variable name — `l` for low is OHLC convention
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 12
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["N802", "N803"]  # allow non-snake_case in test names
+"notebooks/*" = ["E", "F", "B"]
+"scripts/*" = ["C901"]  # CLI scripts are naturally branchy
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true
+disallow_untyped_defs = false
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unreachable = true
+exclude = ["notebooks/", "data/", "logs/", ".venv/"]
+
+[[tool.mypy.overrides]]
+module = ["yfinance.*", "nsepython.*", "vectorbt.*", "backtesting.*"]
+ignore_errors = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra --strict-markers --tb=short"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+markers = [
+    "slow: marks tests as slow",
+    "integration: marks integration tests",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = ["tests/*", "notebooks/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]

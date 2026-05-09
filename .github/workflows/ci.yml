@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    name: Lint + Test (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install minimal dev dependencies
+        run: |
+          python -m pip install -U pip
+          # CI installs only the deps needed to lint + run smoke tests.
+          # Heavy deps (torch, vectorbt, transformers) are tested in nightly job.
+          pip install \
+            "pandas>=2.2" "numpy<2.0" "pyyaml>=6.0" \
+            "pydantic>=2.7" "pydantic-settings>=2.2" "loguru>=0.7" \
+            "ruff>=0.4" "mypy>=1.10" \
+            "pytest>=8.2" "pytest-cov>=5.0"
+
+      - name: Ruff lint
+        run: ruff check src tests
+
+      - name: Ruff format check
+        run: ruff format --check src tests
+
+      - name: Mypy
+        run: mypy src
+
+      - name: Pytest (smoke)
+        run: pytest -q

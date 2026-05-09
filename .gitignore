@@ -1,0 +1,88 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+auth.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Data — local only (anchored to repo root, so src/data/ is NOT ignored)
+/data/
+!/data/seed/
+!/data/seed/**
+/logs/
+*.sqlite
+*.db
+*.parquet
+!docs/**/*.parquet
+*.csv
+!docs/**/*.csv
+!data/seed/*.csv
+
+# Models
+models/
+*.pkl
+*.joblib
+*.bin
+*.safetensors
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# Feynman
+.feynman/
+
+# Reference books — large, copyrighted; keep local-only
+references/
+*.pdf
+!docs/**/*.pdf

@@ -1,0 +1,10 @@
+# Merged when ALGO_MODE=live (see src.utils.settings.get_settings).
+# Use for stricter risk or execution notes — credentials stay in .env only.
+
+risk:
+  per_trade_pct: 0.01
+  max_single_position_pct: 0.15
+
+execution:
+  # Document only; broker selection is ALGO_MODE + scripts.paper_trade --broker
+  kite_product: CNC

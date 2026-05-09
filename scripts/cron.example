@@ -1,0 +1,15 @@
+# Example crontab (run `crontab -e`). Times are IST — set TZ in the shell or use UTC offsets.
+# Replace /path/to/Algo_bot with your project root and ensure venv is activated.
+
+# SHELL=/bin/bash
+# PATH=/usr/local/bin:/usr/bin
+# TZ=Asia/Kolkata
+
+# 08:25 IST — sentiment (weekdays)
+# 25 8 * * 1-5 cd /path/to/Algo_bot && . .venv/bin/activate && python -m scripts.refresh_sentiment
+
+# 16:30 IST — EOD prices
+# 30 16 * * 1-5 cd /path/to/Algo_bot && . .venv/bin/activate && python -m scripts.fetch_history --mode daily
+
+# 16:35 IST — paper OR live driver (same script; ALGO_MODE in .env selects Kite when live)
+# 35 16 * * 1-5 cd /path/to/Algo_bot && . .venv/bin/activate && set -a && source .env && set +a && python -m scripts.paper_trade
