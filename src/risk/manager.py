@@ -274,7 +274,9 @@ def risk_limits_from_settings() -> RiskLimits:
     return RiskLimits(
         per_trade_pct=float(cfg.get("per_trade_pct", d.per_trade_pct)),
         per_strategy_daily_pct=float(cfg.get("per_strategy_daily_pct", d.per_strategy_daily_pct)),
-        max_single_position_pct=float(cfg.get("max_single_position_pct", d.max_single_position_pct)),
+        max_single_position_pct=float(
+            cfg.get("max_single_position_pct", d.max_single_position_pct)
+        ),
         max_sector_pct=float(cfg.get("max_sector_pct", d.max_sector_pct)),
         max_gross_exposure=float(cfg.get("max_gross_exposure", d.max_gross_exposure)),
         max_net_long_exposure=float(cfg.get("max_net_long_exposure", d.max_net_long_exposure)),

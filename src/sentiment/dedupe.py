@@ -46,11 +46,7 @@ def recent_article_content_hashes(store: DataStore, *, limit: int = 10_000) -> s
     """Fingerprints for the most recently inserted rows (by primary key)."""
     out: set[str] = set()
     with store.session() as sess:
-        q = (
-            select(Article.title, Article.summary)
-            .order_by(Article.id.desc())
-            .limit(max(1, limit))
-        )
+        q = select(Article.title, Article.summary).order_by(Article.id.desc()).limit(max(1, limit))
         for title, summary in sess.execute(q).all():
             if not (title or summary):
                 continue

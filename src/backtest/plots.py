@@ -27,7 +27,9 @@ def equity_and_drawdown_figure(
     peak = s.cummax()
     dd = s / peak - 1.0
 
-    fig, axes = plt.subplots(2, 1, figsize=figsize, sharex=True, gridspec_kw={"height_ratios": [2, 1]})
+    fig, axes = plt.subplots(
+        2, 1, figsize=figsize, sharex=True, gridspec_kw={"height_ratios": [2, 1]}
+    )
     ax0, ax1 = axes
     s.plot(ax=ax0, color="steelblue", linewidth=1.2)
     ax0.set_ylabel("Equity")

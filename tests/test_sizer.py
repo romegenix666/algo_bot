@@ -162,9 +162,7 @@ def test_update_trailing_short_ratchets_when_profitable() -> None:
 
 
 def test_update_trailing_flat_returns_unchanged() -> None:
-    assert (
-        update_trailing_stop(50.0, 100.0, 1.0, 2.0, Side.FLAT, entry_price=100.0) == 50.0
-    )
+    assert update_trailing_stop(50.0, 100.0, 1.0, 2.0, Side.FLAT, entry_price=100.0) == 50.0
 
 
 def test_estimate_win_stats_empty() -> None:

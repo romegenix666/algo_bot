@@ -107,7 +107,9 @@ def test_default_map_covers_all_regime_enum_values() -> None:
 
 
 def test_detect_allocation_uses_default_detector() -> None:
-    det = RegimeDetector(vol_window=10, trend_window=20, high_vol_threshold=0.9, trending_score_threshold=0.01)
+    det = RegimeDetector(
+        vol_window=10, trend_window=20, high_vol_threshold=0.9, trending_score_threshold=0.01
+    )
     n = 80
     idx = pd.date_range("2023-01-01", periods=n, freq="B")
     close = pd.Series(np.linspace(50.0, 80.0, n), index=idx)

@@ -14,7 +14,9 @@ def test_sensitivity_report_to_dataframe() -> None:
         SensitivityRow("top_n", 4.0, 0.8, -0.1, 0.12),
         SensitivityRow("top_n", 6.0, 0.7, -0.12, 0.10),
     ]
-    rep = SensitivityReport(base_sharpe=0.75, base_max_dd=-0.11, base_cagr=0.11, rows=rows, robust_pct=0.5)
+    rep = SensitivityReport(
+        base_sharpe=0.75, base_max_dd=-0.11, base_cagr=0.11, rows=rows, robust_pct=0.5
+    )
     df = rep.to_dataframe()
     assert len(df) == 2
     assert list(df.columns) == ["parameter", "value", "sharpe", "max_drawdown", "cagr"]

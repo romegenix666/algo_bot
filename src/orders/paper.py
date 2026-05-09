@@ -199,7 +199,9 @@ class PaperBroker(Broker):
                 f"circuit_band_sim |mark-ref|/ref>={self.circuit_limit_pct:.4f} "
                 f"(ref={ref:.4f} mark={mark:.4f})"
             )
-            logger.warning("Paper broker: rejecting {} — {}", order.client_order_id, record.rejection_reason)
+            logger.warning(
+                "Paper broker: rejecting {} — {}", order.client_order_id, record.rejection_reason
+            )
             return
         self._fill_at(record, mark, datetime.now(UTC), idempotent=True)
 

@@ -42,7 +42,9 @@ def test_momentum_12_1_rejects_lookback_le_skip() -> None:
 
 def test_rolling_volatility_no_annualize() -> None:
     idx = pd.date_range("2024-01-01", periods=80, freq="B")
-    close = pd.Series(100 * np.exp(np.cumsum(np.random.default_rng(3).normal(0, 0.01, 80))), index=idx)
+    close = pd.Series(
+        100 * np.exp(np.cumsum(np.random.default_rng(3).normal(0, 0.01, 80))), index=idx
+    )
     vol_d = rolling_volatility(close, window=20, annualize=False).dropna()
     vol_a = rolling_volatility(close, window=20, annualize=True).dropna()
     assert (vol_a / vol_d).mean() == pytest.approx(np.sqrt(252), rel=0.01)
